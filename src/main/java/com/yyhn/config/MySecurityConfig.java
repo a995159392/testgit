@@ -62,6 +62,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                             httpServletResponse.setStatus(200);
                             Map<String,Object> map=new HashMap<>();
                             map.put("status",290);
+                            map.put("status",230);
                             map.put("msg",principal);
                             ObjectMapper om=new ObjectMapper();
                             httpServletResponse.getWriter().write(om.writeValueAsString(map));
