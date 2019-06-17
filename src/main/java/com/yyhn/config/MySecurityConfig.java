@@ -61,7 +61,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                             httpServletResponse.setContentType("application/json;charset=utf-8");
                             httpServletResponse.setStatus(200);
                             Map<String,Object> map=new HashMap<>();
-                            map.put("status",220);
+                            map.put("status",290);
                             map.put("msg",principal);
                             ObjectMapper om=new ObjectMapper();
                             httpServletResponse.getWriter().write(om.writeValueAsString(map));
