@@ -82,7 +82,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                         else if(e instanceof BadCredentialsException)
                             map.put("msg","账号或者密码错误，登录失败");
                         else
-                            map.put("msg","登录失败");
+                            map.put("msg","登录失败saaa");
 
                         ObjectMapper obj=new ObjectMapper();
                         out.write(obj.writeValueAsString(map));
