@@ -74,6 +74,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                     public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
                        httpServletResponse.setContentType("application/json;charset=utf-8");
                         PrintWriter out=httpServletResponse.getWriter();
+                        httpServletResponse.setStatus(404);
                         httpServletResponse.setStatus(403);
                         Map<String,Object> map=new HashMap<>();
                         map.put("staus","401");
